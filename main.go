@@ -24,7 +24,7 @@ var db *sql.DB
 
 func initDB() {
 	var err error
-	db, err = sql.Open("mysql", "blog_user:Bloguser@2025@tcp(127.0.0.1:3306)/my_graphql_blog_db?charset=utf8")
+	db, err = sql.Open("mysql", "blog_user:db_password@tcp(127.0.0.1:3306)/my_graphql_blog_db?charset=utf8")
 	if err != nil {
 		log.Fatal(err)
 	}
