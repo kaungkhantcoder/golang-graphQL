@@ -22,6 +22,7 @@ var db *sql.DB
 
 // establish a connection to the database
 
+
 func initDB() {
 	var err error
 	db, err = sql.Open("mysql", "blog_user:db_password@tcp(127.0.0.1:3306)/my_graphql_blog_db?charset=utf8")
